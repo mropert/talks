@@ -197,6 +197,29 @@ class: middle
 
 .footnote[_* planned_]
 ---
+## Modern C++ now!
+
+- Following modern C++ best practices such as the C++ Core Guidelines requires C++14 or more
+
+	- Use unique_ptr<T> and shared_ptr<T> to manage memory
+	
+	- Use variant<...> instead of unions
+	
+- Portability across operating systems is a pain without C++11 and onwards
+
+	- threads, mutex and others are only available since C++11
+	
+	- filesystem module only comes with C++17
+	
+	- still no sockets/network :(
+	
+- With only C++03 available, you have to rely on 3rd parties to keep-up with modern practices and avoid debt
+
+- fsl can bring you some of those features now!
+
+	- it's not debt if you can easily replace it by the std:: implementation once you upgrade your compiler
+
+---
 class: middle
 ## Plans and ideas for the future
 
